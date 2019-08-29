@@ -14,7 +14,7 @@ $dp[i+1]=dp[i]+E$
 因为每一次如果升级成功，花费的期望为$p[i]*a[i]$。  
 如果不成功则从$x[i]$升级到$i$级中间花的代价就白费了，所以用前缀和相减就能得到这部分的数值，再加上这次升级所需的费用$a[i]$，最后就是再加上这次升级的总体期望E。
 
-```c
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int LL;

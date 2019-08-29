@@ -5,7 +5,7 @@
 ## 题解
 第一位定为一个较大的值，枚举[high-n+1,low+n-1]，然后控制数列最大值-最小值<=n-1,这样就能保证按顺序dfs,最后输出的时候所有值减去最小值。
 
-```c
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int LL;
